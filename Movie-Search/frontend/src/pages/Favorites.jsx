@@ -1,9 +1,11 @@
 import React from 'react'
+import '../css/Favorites.css'
 
 function Favorites() {
   return (
-    <div>
-      
+    <div className='favorites-empty'>
+      <h2>No Favorite Movies added yet...</h2>
+      <p>start adding movies to your favorites and they will appear here</p>
     </div>
   )
 }
