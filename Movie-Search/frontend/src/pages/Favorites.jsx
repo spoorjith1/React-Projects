@@ -7,7 +7,7 @@ import MovieCard from '../components/MovieCard'
 function Favorites() {
   const { favorites } = useMovieContext();
 
-  if (favorites) {
+  if (favorites.length > 0) {
     return (
       <div className='favorites'>
         <h2>Your Favorites</h2>
@@ -19,13 +19,13 @@ function Favorites() {
       </div>
     );
   }
-
-  return (
-    <div className='favorites-empty'>
-      <h2>No Favorite Movies added yet...</h2>
-      <p>start adding movies to your favorites and they will appear here</p>
-    </div>
-  )
+  else {
+    return (
+      <div className='favorites-empty'>
+        <h2>No Favorite Movies added yet...</h2>
+        <p>start adding movies to your favorites and they will appear here</p>
+      </div>
+    )
+  }
 }
-
-export default Favorites
+export default Favorites;
