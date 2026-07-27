@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --bg-black: black;
+    --bg-card: #121212;
+
+    --text-main: #d7d7d7;
+    --text-highlight: white;
+    --text-muted: #ffffffa0;
+    --text-black: black;
+
+    --color-one: #f130ff;
+    --color-one-hover: #d729e4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-main);
+    font-family: "Nunito", sans-serif;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: center;
+    position: static;
+    top: 0;
+}
+
+.navbar {
+    width: 96%;
+    padding: 24px 16px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title {
+    font-size: 1.8rem;
+    color: var(--text-highlight);
+}
+
+
+.navbar-link-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24%;
+}
+
+.navbar-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 1.05rem;
+    transition: 0.22s;
+    padding-bottom: 4px;
+}
+.navbar-link:hover {
+    color: var(--text-highlight);
+    transform: translateY(-3px);
+}
+.navbar-link.active {
+    color: var(--text-highlight);
+    border-bottom: 3px solid var(--text-highlight);
+}
+
+.navbar-sign-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar-sign-btn {
+    background: none;
+    border: none;
+    color: var(--text-main);
+    font-size: 0.95rem;
+    font-family: "Nunito", sans-serif;
+    border-radius: 8px;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+.nav-sign-in {
+    background-color: var(--color-one);
+    color: var(--text-black);
+}
+.nav-sign-in:hover {
+    background-color: var(--color-one-hover);
+}
+
+.nav-sign-up {
+    color: var(--color-one);
+    transition: 0.20s;
+}
+.nav-sign-up:hover {
+    text-decoration: 1px solid underline;
+    transform: scale(1.05);
+}
+
+
+/*hero section*/
+.hero-section-wrapper {
+    padding: 16px 10px;
+}
+
+.hero-section {
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 6px;
+}
